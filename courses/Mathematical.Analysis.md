@@ -200,11 +200,37 @@ No contents.
 * __Uniformly continuous__: $\forall\epsilon>0,\exists\delta,\forall p\in\mathrm{X},q\in\mathrm{X},d_\mathrm{X}\left(p,q\right)\land d_\mathrm{Y}\left(f\left(p\right),f\left(q\right)\right)<\epsilon$; 
 
 ### Continuity and Connectedness
+No contents. 
+
 ### Discontinuities
+* __$f(x+)$__; 
+* __First kind discontinuity(Simple discontinuity)__: $f(x+)$ and $f(x-)$ exist; 
+* __Second kind dsicontinuity__: $f(x+)$ and $f(x-)$ dont exist;
+
 ### Monotonic Functions
+* __Monotonically increasing__; 
+
 ### Infinite Limits and Limits at Infinity
+No Contents. 
 
 ## Differentiation
+### The Derivative of a Real Function
+* Lef $f$ be defined (and real-valued) on $[a,b]$. For any $x\in\left[a,b\right]$ form the quotient $$
+\phi\left(t\right)=\frac{f\left(t\right)-f\left(x\right)}{t-x}, \left(a<t<b,t\ne x\right)
+$$ and define $$
+f^\prime\left(x\right)=\lim_{t\to x}\phi\left(t\right),
+$$ provided this limit exists; $f^\prime$ is called the _derivative_ of $f$; if $f^\prime$ is defined at a point $x$, we say that $f$ is _differentiable_ at $x$. 
+* __Th.__ _Continuous_ $\to$ _Differentiable_; 
+* $h\left(t\right)=f\left(g\left(t\right)\right)$, $h^\prime\left(x\right)=g^\prime\left(f\left(x\right)\right)f^\prime\left(x\right).$
+
+### Mean Value Theorems
+
+### The Continuity of Derivatives
+### L'Hospital's Rule
+### Derivatives of Higher Order
+### Taylor's Theorem
+### Differentiation of Vector-valued Functions
+
 ## The Riemann-Stieltjes Integral
 ## Sequences and Series of Functions
 ## Some Special Functions

@@ -11,7 +11,7 @@ blockquote {
   max-width: 700px;
   margin: 0 auto;
   text-align: justify;
-  font-size: 20px; }
+  font-size: 16px; }
   .content > header {
     font-size: 1.2em;
     text-align: center; }
@@ -101,8 +101,8 @@ h6 {
 
 .antique body {
   background: -webkit-linear-gradient(top, rgba(215, 235, 250, 0.3), rgba(215, 235, 250, 0.3)), url("fabric_plaid.png");
-  font-family: Palatino,Georgia,"Times New Roman";
-  font-family: "Times New Roman";
+/*  font-family: Palatino,Georgia,"Times New Roman";
+  font-family: "Times New Roman";*/
   color: #333;
   text-shadow: 0 1px 1px #fff; }
 

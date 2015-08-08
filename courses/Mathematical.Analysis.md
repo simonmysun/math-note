@@ -91,11 +91,11 @@ $$ whenever $\mathbf{x}\in\mathrm{E}$, $\mathbf{y}\in\mathrm{E}$, and $0<\lambda
 ### Compact Sets
 * __Open cover__: By an _open cover_ of a set $\mathrm{E}$ in a metrix space $\mathrm{X}$ we mean a collection $\left\{G_\alpha\right\}$ of open subsets of $\mathrm{X}$ such that $\mathrm{E}\in\cup_\alpha\mathrm{G}_\alpha$;
 * __Compact__: A subset $\mathrm{K}$ of a metric space $\mathrm{X}$ is said to be _compact_ if every open cover of $\mathrm{K}$ contains a _finite_ subcover;
-* __Th.__ __Heine-Borel theorem__: If a set $\mathrm{E} in $\mathrm{R}^k$ has one of the following three properties, then it has the other two:
+* __Th.__ __Heine-Borel theorem__: If a set $\mathrm{E}\in\mathrm{R}^k$ has one of the following three properties, then it has the other two:
     * (a) $\mathrm{E}$ is closed and bounded; 
     * (b) $\mathrm{E}$ is compact; 
     * (c) Every infinite subset of $\mathrm{E}$ has a limit point of $\mathrm{E}$. 
-* __Th.__ __Weierstrass theorem__: Wvery bounded infinite subset of $\mathrm{R}^k$ has a limit point in $\mathrm{R}^k$;
+* __Th.__ __Weierstrass theorem__: Every bounded infinite subset of $\mathrm{R}^k$ has a limit point in $\mathrm{R}^k$;
 
 ### Perfect Sets
 * __The Cantor set__: closed, bounded, perfect, has no isolated point, has no segment, compact, uncountable, measuring zero;
@@ -106,21 +106,104 @@ $$ whenever $\mathbf{x}\in\mathrm{E}$, $\mathbf{y}\in\mathrm{E}$, and $0<\lambda
 
 ## Numerical Sequences and Series
 ### Convergent Sequences
+* __Converge__: $\forall\epsilon>0,\exists N\in\mathrm{N},\forall n\ge N, d\left(p_n,p\right)<\epsilon$; 
+* __Range__, __Bounded__;
+
 ### Subsequences
+* __Subsequence__, __Subsequential limit__;
+
 ### Cauchy Sequences
+* __Cauchy sequence__: $\forall\epsilon>0,\exists N, \forall n>N,m>N,d\left(p_n,p_m\right)$; 
+* __Diameter__: $\mathrm{diam}~\mathrm{E}=\mathrm{sup}\left\{x|x=d\left(p,q\right),p\in\mathrm{E},q\in\mathrm{E}\right\}$; 
+* __Complete__: In which every Cauchy sequence converges; 
+* __Monotonically increasing__, __Monotonically decreasing__; 
+
 ### Upper and Lower Limits
+* __$s_n\to+\infty$__: $\forall M,\exists N\in\mathrm{N},\forall m\ge N, s_n\ge M$;
+* Let $\mathrm{E}$ be the set of number $x$ such that $S_{n_k}\to x$ for some subsequence $\left\{s_{n_k}\right\}$. Put $$
+\begin{aligned}
+s^*&=\mathrm{sup}~\mathrm{E}\\
+s_*&=\mathrm{inf}~\mathrm{E}
+\end{aligned}
+$$, $s^*$ and $s_*$ are called the _upper_and _lower_ limits of $\left\{s_n\right\}$; we use the notation $$
+\lim_{n\to+\infty}\mathrm{sup}~s_n=s^*, \lim_{n\to+\infty}\mathrm{inf}~s_n=s_*, 
+$
+
 ### Some Special Sequences
+* $$
+\lim_{n\to\infty}\frac{1}{n^p}=0,p>0
+$$
+* $$
+\lim_{n\to\infty}\sqrt[n]{p}=1,p>0
+$$
+* $$
+\lim_{n\to\infty}\sqrt[n]{n}=1
+$$
+* $$
+\lim_{n\to\infty}\frac{n^\alpha}{\left(1+p\right)^n}=0, p>0, \alpha\in\mathrm{R}
+$$
+* $$
+\lim_{n\to\infty}x^n=0
+$$
+
 ### Series
+* $$
+s_n=\sum_{n=1}^{\infty}{a_n}.
+$$
+* $\sum a_n\to a\sim\forall\epsilon>0,\exists N, $ $$
+\left|\sum_{k=n}^m{a_k}\right|\le\epsilon, m\ge n\ge N
+$$
+* __Th.__ A series of nonegative terms converges if and only if its partial sums form a bounded sequence;
+
 ### Series of Nonnegative Terms
+* $$
+\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+$$
+* Suppose $a_1\ge a_2\ge a_3\ge\cdots\ge 0$. Then $$
+{\sum_{n=1}^{\infty}a_n\text{ converges}}\sim{\sum_{k=0}^{\infty}{2^ka_{2^k}}} \text{ converges}
+$$
+
 ### The Number $e$
+* $$
+e=\sum_{n=0}^{\infty}{\frac{1}{n!}}
+$$
+* $$
+\lim_{n\to\infty}{\left(1+\frac{1}{n}\right)}^n=e
+$$
+
 ### The Root and Ratio Tests
+No contents.
+
 ### Power Series
+* __Power series__: $\sum_{n=0}^\infty{c_nz^n}$
+
 ### Summation by Parts
-### Absolue Convergence
+No contents. 
+
+### Absolute Convergence
+* __Converge absolutely__, __Conabsolutely nonabolutely__;
+
 ### Addition and Multiplication of Series
+No contents. 
+
 ### Rearrangements
+* __Rearrangement__ of $\sum a_n$: $a_n^\prime=a_{k_n}~\left(n=1,2,3,\ldots\right)$;
 
 ## Continuity
+### Limits of Functions
+* $\lim_{x\to p}{f\left(x\right)}=q$;
+
+### Continuous Functions
+* __Continuous__: Suppose $\mathrm{X}$, $\mathrm{Y}$ are metric spaces, $\mathrm{E}\in\mathrm{X}$, $p\in\mathrm{E}$, $f$ maps $\mathrm{E}$ into $\mathrm{Y}$, $\forall\epsilon>0,\exists\delta>0\forall x\in\mathrm{E},d_\mathrm{X}\left(x,p\right)<\delta\land d_\mathrm{Y}\left(f\left(x\right),f\left(p\right)\right)<\epsilon$; 
+
+### Continuity and Compactness
+* __Uniformly continuous__: $\forall\epsilon>0,\exists\delta,\forall p\in\mathrm{X},q\in\mathrm{X},d_\mathrm{X}\left(p,q\right)\land d_\mathrm{Y}\left(f\left(p\right),f\left(q\right)\right)<\epsilon$; 
+
+### Continuity and Connectedness
+### Discontinuities
+### Monotonic Functions
+### Infinite Limits and Limits at Infinity
+
 ## Differentiation
 ## The Riemann-Stieltjes Integral
 ## Sequences and Series of Functions
